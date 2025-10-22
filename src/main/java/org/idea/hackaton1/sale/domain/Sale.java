@@ -29,7 +29,7 @@ public class Sale {
     private String branch;
 
     @Column(nullable = false)
-    private LocalDate soldAt;
+    private LocalDateTime soldAt;
 
     @Column(nullable = false)
     private String createdBy;

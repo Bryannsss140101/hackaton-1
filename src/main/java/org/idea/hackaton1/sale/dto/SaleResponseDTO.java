@@ -12,10 +12,12 @@ public class SaleResponseDTO {
     private String sku;
 
     private Integer units;
+
     private Double price;
+
     private String branch;
 
-    private LocalDate soldDate;
+    private LocalDateTime soldAt;
 
     private String createdBy;
 }
