@@ -4,6 +4,7 @@ import jakarta.validation.constraints.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 public class SaleRequestDTO {
@@ -22,5 +23,5 @@ public class SaleRequestDTO {
     @NotBlank(message = "La sucursal es obligatoria")
     private String branch;
 
-    private LocalDate soldAlt;
+    private LocalDateTime soldAlt;
 }
