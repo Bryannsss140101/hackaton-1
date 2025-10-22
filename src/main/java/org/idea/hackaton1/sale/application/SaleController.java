@@ -16,5 +16,6 @@ public class SaleController {
 
     @PostMapping
     public ResponseEntity<SaleResponseDTO> createSale() {
+
     }
 }
