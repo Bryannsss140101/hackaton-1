@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Trip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body{font-family:'Poppins',Arial,sans-serif;background:#fff;margin:0;padding:0;color:#111827;}
+        .container{max-width:600px;margin:30px auto;background:rgba(255,255,255,.8);border-radius:20px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.1);}
+        .header{background:linear-gradient(90deg,#9333ea,#2563eb);padding:35px 20px;text-align:center;color:#fff;}
+        .header h1{margin:0;font-size:26px;font-weight:600;letter-spacing:.5px;}
+        .header p{margin:8px 0 0;font-size:15px;opacity:.9;}
+        .content{padding:30px;}
+        .circle{width:22px;height:22px;border-radius:50%;background:#2563eb;margin-right:10px;box-shadow:0 0 0 3px #ffffff;flex-shrink:0;}
+        .driver-card{background:rgba(0,0,0,.1);padding:20px;border-radius:12px;margin-top:20px;text-align:center;}
+        .driver-card img{width:70px;height:70px;border-radius:50%;margin-bottom:10px;object-fit:cover;border:6px solid #000;}
+        .footer{padding:15px;text-align:center;font-size:12px;color:#6b7280;background:#f9fafb;}
+        .stop{display:flex;align-items:center;margin:10px 0;}
+        .stop p{margin:0 0 0 10px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Sparky Trip Confirmed</h1>
+        <p>Route is scheduled</p>
+    </div>
+
+    <div class="content">
+        <p>Greetings <strong>[[${data.passengerName}]]</strong>, here is your trip timeline:</p>
+
+        <div class="timeline">
+            <div class="stop">
+                <div class="circle"></div>
+                <p><strong>Origin:</strong> [[${data.origin}]]</p>
+            </div>
+            <div class="stop">
+                <div class="circle"></div>
+                <p><strong>Destination:</strong> [[${data.destination}]]</p>
+            </div>
+            <div class="stop">
+                <div class="circle"></div>
+                <p><strong>Date:</strong> [[${data.date}]]</p>
+            </div>
+            <div class="stop">
+                <div class="circle"></div>
+                <p><strong>Time:</strong> [[${data.time}]]</p>
+            </div>
+        </div>
+
+        <div class="driver-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Driver photo">
+            <p><strong>Driver:</strong> [[${data.driverName}]]</p>
+            <p><strong>Car:</strong> [[${data.carModel}]]</p>
+            <p><strong>Plate:</strong> [[${data.carPlate}]]</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 RealState Peru Transport Sparky-DBP.<br>
+    </div>
+</div>
+</body>
+</html>
