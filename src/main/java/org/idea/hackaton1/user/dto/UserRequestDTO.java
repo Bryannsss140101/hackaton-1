@@ -9,7 +9,6 @@ import org.idea.hackaton1.user.domain.Role;
 
 @Data
 public class UserRequestDTO {
-
     @NotBlank(message = "El nombre de usuario es obligatorio")
     @Pattern(
             regexp = "^[A-Za-z0-9._]{3,30}$",
@@ -29,7 +28,4 @@ public class UserRequestDTO {
     private Role role;
 
     private String branch;
-
-
-
 }

@@ -8,4 +8,6 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class SaleService {
     private final SaleRepository saleRepository;
+
+    public
 }
