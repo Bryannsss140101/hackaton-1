@@ -1,12 +1,18 @@
 package org.idea.hackaton1.report.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "reports")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Report {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
