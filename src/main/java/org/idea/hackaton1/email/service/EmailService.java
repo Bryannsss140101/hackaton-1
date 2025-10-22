@@ -11,7 +11,7 @@ import org.thymeleaf.context.Context;
 @Service
 @RequiredArgsConstructor
 public class EmailService {
-    private final JavaMailSender javaMailSender;
+    //private final JavaMailSender javaMailSender;
     private final TemplateEngine templateEngine;
 
     public void sendSimpleMessage(String to, String subject, String text) {
@@ -19,6 +19,6 @@ public class EmailService {
         message.setTo(to);
         message.setSubject(subject);
         message.setText(text);
-        mailSender.send(message);
+        //mailSender.send(message);
     }
 }
